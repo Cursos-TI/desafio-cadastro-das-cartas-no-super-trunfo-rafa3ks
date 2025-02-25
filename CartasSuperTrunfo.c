@@ -5,7 +5,7 @@ int main() {
 
     char estado1;
     int codigo1;
-    char cidade1 [30];
+    char cidade1 [60];
     int populacao1;
     float area1;
     float pib1;
@@ -46,11 +46,11 @@ int main() {
 
     printf("Carta1: \n");
     printf("Estado: %c  \n" ,estado1 );
-    printf("Codigo: %c%d  \n" ,estado1,codigo1);
+    printf("Codigo: %c0%d  \n" ,estado1,codigo1);
     printf("Nome da cidade: %s  \n" ,cidade1);
     printf("População: %d \n" ,populacao1);
-    printf("Área: %fkm  \n" ,area1);
-    printf("PIB: %f Bilhões de reais  \n" ,pib1);
+    printf("Área: %.2fkm  \n" ,area1);
+    printf("PIB: %.2f Bilhões de reais  \n" ,pib1);
     printf("Número de pontos turisticos: %d  \n" ,pontost1);
     printf(" \n");
     //print da primeira carta
@@ -80,12 +80,13 @@ int main() {
 
     printf("Carta2: \n");
     printf("Estado: %c  \n" ,estado2 );
-    printf("Codigo: %c%d  \n" ,estado2,codigo2);
+    printf("Codigo: %c0%d  \n" ,estado2,codigo2);
     printf("Nome da cidade: %s  \n" ,cidade2);
     printf("População: %d \n" ,populacao2);
-    printf("Área: %fkm  \n" ,area2);
-    printf("PIB: %f Bilhões de reais  \n" ,pib2);
+    printf("Área: %.2fkm  \n" ,area2);
+    printf("PIB: %.2f Bilhões de reais  \n" ,pib2);
     printf("Número de pontos turisticos: %d  \n" ,pontost2);
+    printf("  \n");
     //print da segunda carta
     
 
