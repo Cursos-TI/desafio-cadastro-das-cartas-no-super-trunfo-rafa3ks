@@ -124,7 +124,17 @@ int main() {
     printf("Super poder: %d \n", resultadoSUPER);
     printf(" \n");
     //resultado da comparação das duas cartas 
-    
+
+    printf("comparação de cartas: (atributo: populção) \n");
+    printf("\n");
+    printf("carta1-%s: %d \n",cidade1 ,populacao1);
+    printf("carta2-%s: %d \n",cidade2 ,populacao2);
+    if(populacao1 > populacao2){
+        printf("Resultado: carta1(%s) venceu!!! \n",cidade1);
+    }else{
+        printf("resultado: carta2(%s) venceu!!! \n",cidade2);
+    }
+    //comparação de um atributo escolhido, e comparado através de dois operadores de condição
 
     return 0;
 }
