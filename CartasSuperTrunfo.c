@@ -29,7 +29,7 @@ int main() {
     scanf("%u" , &codigo1);
 
     printf("digite o nome de uma cidade do estado escolhido(favor colocar a _ para separar se for nome composto): \n");
-    scanf("%[^\n]", &cidade1);
+    scanf("%s", &cidade1);
 
     printf("digite a população da cidade: \n");
     scanf("%u" , &populacao1);
@@ -71,7 +71,7 @@ int main() {
     scanf("%d" , &codigo2);
 
     printf("digite o nome de uma cidade do estado escolhido(favor colocar a _ para separar se for nome composto): \n");
-    scanf("%[^\n]", &cidade2);
+    scanf("%s", &cidade2);
 
     printf("digite a população da cidade: \n");
     scanf("%u" , &populacao2);
@@ -108,7 +108,7 @@ int main() {
     //Variaveis para escolha do usuário
     int escolha1;
     int escolha2;
-    int resposta;
+    int resposta = (escolha2=!escolha1?1:0);
 
     //menu de escolha para disputa do usuario
     printf("Escolha dois atributo para a disputa das cartas:\n");
@@ -125,20 +125,19 @@ int main() {
     scanf("%d", &escolha2);
     printf("  \n");
     
-    //variavel para definir se as escolhass foram diferentes
-    resposta = escolha2 =! escolha1 ? 1:0;
-    
+
+    //possibilidades de resposta
+    if(resposta=!1){
+
     //apresentação das cartas de forma geral
     printf("***Resultado da disputa***\n");
     printf("carta1 cidade: %s\n" , cidade1);
     printf("carta2 cidade: %s\n" , cidade2);
 
-    //possibilidades de resposta
-    if(resposta == 1){
         //resultado primeira escolha
         switch (escolha1)
         {
-            case 1:
+            case 1 :
             printf("atributo escolhido foi população:\n");
             printf("População do %s: %d \n", cidade1, populacao1);
             printf("População do %s: %d \n", cidade2, populacao2);
