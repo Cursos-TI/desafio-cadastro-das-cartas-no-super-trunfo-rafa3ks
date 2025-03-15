@@ -125,15 +125,15 @@ int main() {
     scanf("%d", &escolha2);
     printf("  \n");
     
-
-    //possibilidades de resposta
-    if(resposta=!1){
-
     //apresentação das cartas de forma geral
     printf("***Resultado da disputa***\n");
     printf("carta1 cidade: %s\n" , cidade1);
     printf("carta2 cidade: %s\n" , cidade2);
+    printf("  \n");
 
+    if (resposta == 0)
+    {
+    
         //resultado primeira escolha
         switch (escolha1)
         {
@@ -144,10 +144,13 @@ int main() {
             
             if(populacao1>populacao2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(populacao1<populacao2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
@@ -158,10 +161,13 @@ int main() {
                 
             if(area1>area2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(area1<area2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
         
@@ -172,10 +178,13 @@ int main() {
                 
             if(pib1>pib2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(pib1<pib2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
@@ -186,10 +195,13 @@ int main() {
                 
             if(pontost1>pontost2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(pontost1<pontost2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
@@ -200,10 +212,13 @@ int main() {
                 
             if(densidade1>densidade2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(densidade1<densidade2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
@@ -214,10 +229,13 @@ int main() {
                 
             if(PIBCap1>PIBCap2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(PIBCap1<PIBCap2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
@@ -228,10 +246,13 @@ int main() {
                 
             if(super1>super2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(super1<super2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
@@ -239,8 +260,10 @@ int main() {
         printf("***escolha invalida!!!*** \n");
         printf("reinicie o jogo! \n");
         printf("Encerrando... \n");
+        printf("  \n");
             break;
         }
+
 
         //possibilidades da segunda escolha
         switch (escolha2)
@@ -252,10 +275,13 @@ int main() {
             
             if(populacao1>populacao2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(populacao1<populacao2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
@@ -266,10 +292,13 @@ int main() {
                 
             if(area1>area2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(area1<area2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
         
@@ -280,10 +309,13 @@ int main() {
                 
             if(pib1>pib2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(pib1<pib2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
@@ -294,10 +326,13 @@ int main() {
                 
             if(pontost1>pontost2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(pontost1<pontost2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
@@ -308,10 +343,13 @@ int main() {
                 
             if(densidade1>densidade2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(densidade1<densidade2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
@@ -322,10 +360,13 @@ int main() {
                 
             if(PIBCap1>PIBCap2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(PIBCap1<PIBCap2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
@@ -336,10 +377,13 @@ int main() {
                 
             if(super1>super2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
+                printf("  \n");
             }else if(super1<super2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
+                printf("  \n");
             }else{
                 printf("Ouve um empate entre as duas cartas!");
+                printf("  \n");
             }
                 break;
 
