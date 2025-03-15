@@ -108,7 +108,7 @@ int main() {
     //Variaveis para escolha do usuário
     int escolha1;
     int escolha2;
-    int resposta = (escolha2=!escolha1?1:0);
+    int resposta = (escolha2!=escolha1?1:0);
 
     //menu de escolha para disputa do usuario
     printf("Escolha dois atributo para a disputa das cartas:\n");
@@ -125,22 +125,23 @@ int main() {
     scanf("%d", &escolha2);
     printf("  \n");
     
+    
+    if (escolha1!=escolha2)
+    {
+
     //apresentação das cartas de forma geral
     printf("***Resultado da disputa***\n");
     printf("carta1 cidade: %s\n" , cidade1);
     printf("carta2 cidade: %s\n" , cidade2);
     printf("  \n");
 
-    if (resposta == 0)
-    {
-    
         //resultado primeira escolha
         switch (escolha1)
         {
             case 1 :
             printf("atributo escolhido foi população:\n");
-            printf("População do %s: %d \n", cidade1, populacao1);
-            printf("População do %s: %d \n", cidade2, populacao2);
+            printf("População de %s: %d \n", cidade1, populacao1);
+            printf("População de %s: %d \n", cidade2, populacao2);
             
             if(populacao1>populacao2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -156,8 +157,8 @@ int main() {
 
             case 2:
             printf("atributo escolhido foi área:\n");
-            printf("Área do %s: %.2f \n", cidade1, area1);
-            printf("Área do %s: %.2f \n", cidade2, area2);
+            printf("Área de %s: %.2f \n", cidade1, area1);
+            printf("Área de %s: %.2f \n", cidade2, area2);
                 
             if(area1>area2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -173,8 +174,8 @@ int main() {
         
             case 3:
             printf("atributo escolhido foi PIB:\n");
-            printf("PIB do %s: %.2f \n", cidade1, pib1);
-            printf("PIB do %s: %.2f \n", cidade2, pib2);
+            printf("PIB de %s: %.2f \n", cidade1, pib1);
+            printf("PIB de %s: %.2f \n", cidade2, pib2);
                 
             if(pib1>pib2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -190,8 +191,8 @@ int main() {
 
             case 4:
             printf("atributo escolhido foi pontos turisticos:\n");
-            printf("Pontos Turiticos do %s: %d \n", cidade1, pontost1);
-            printf("Pontos Turiticos do %s: %d \n", cidade2, pontost2);
+            printf("Pontos Turiticos de %s: %d \n", cidade1, pontost1);
+            printf("Pontos Turiticos de %s: %d \n", cidade2, pontost2);
                 
             if(pontost1>pontost2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -207,8 +208,8 @@ int main() {
 
             case 5:
             printf("atributo escolhido foi densidade populacional:\n");
-            printf("Densidade do %s: %.2f \n", cidade1, densidade1);
-            printf("Densidade do %s: %.2f \n", cidade2, densidade2);
+            printf("Densidade de %s: %.2f \n", cidade1, densidade1);
+            printf("Densidade de %s: %.2f \n", cidade2, densidade2);
                 
             if(densidade1>densidade2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -224,8 +225,8 @@ int main() {
 
             case 6:
             printf("atributo escolhido foi PIB per capita:\n");
-            printf("PIB Per Capita do %s: %.2f \n", cidade1, PIBCap1);
-            printf("PIB Per Capita do %s: %.2f \n", cidade2, PIBCap2);
+            printf("PIB Per Capita de %s: %.2f \n", cidade1, PIBCap1);
+            printf("PIB Per Capita de %s: %.2f \n", cidade2, PIBCap2);
                 
             if(PIBCap1>PIBCap2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -241,8 +242,8 @@ int main() {
 
             case 7:
             printf("atributo escolhido foi Super Poder:\n");
-            printf("Super Poder do %s: %.2f \n", cidade1, super1);
-            printf("Super Poder do %s: %.2f \n", cidade2, super2);
+            printf("Super Poder de %s: %.2f \n", cidade1, super1);
+            printf("Super Poder de %s: %.2f \n", cidade2, super2);
                 
             if(super1>super2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -264,14 +265,13 @@ int main() {
             break;
         }
 
-
         //possibilidades da segunda escolha
         switch (escolha2)
         {
             case 1:
             printf("atributo escolhido foi população:\n");
-            printf("População do %s: %d \n", cidade1, populacao1);
-            printf("População do %s: %d \n", cidade2, populacao2);
+            printf("População de %s: %d \n", cidade1, populacao1);
+            printf("População de %s: %d \n", cidade2, populacao2);
             
             if(populacao1>populacao2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -287,8 +287,8 @@ int main() {
 
             case 2:
             printf("atributo escolhido foi área:\n");
-            printf("Área do %s: %.2f \n", cidade1, area1);
-            printf("Área do %s: %.2f \n", cidade2, area2);
+            printf("Área de %s: %.2f \n", cidade1, area1);
+            printf("Área de %s: %.2f \n", cidade2, area2);
                 
             if(area1>area2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -304,8 +304,8 @@ int main() {
         
             case 3:
             printf("atributo escolhido foi PIB:\n");
-            printf("PIB do %s: %.2f \n", cidade1, pib1);
-            printf("PIB do %s: %.2f \n", cidade2, pib2);
+            printf("PIB de %s: %.2f \n", cidade1, pib1);
+            printf("PIB de %s: %.2f \n", cidade2, pib2);
                 
             if(pib1>pib2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -321,8 +321,8 @@ int main() {
 
             case 4:
             printf("atributo escolhido foi pontos turisticos:\n");
-            printf("Pontos Turiticos do %s: %d \n", cidade1, pontost1);
-            printf("Pontos Turiticos do %s: %d \n", cidade2, pontost2);
+            printf("Pontos Turiticos de %s: %d \n", cidade1, pontost1);
+            printf("Pontos Turiticos de %s: %d \n", cidade2, pontost2);
                 
             if(pontost1>pontost2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -338,8 +338,8 @@ int main() {
 
             case 5:
             printf("atributo escolhido foi densidade populacional:\n");
-            printf("Densidade do %s: %.2f \n", cidade1, densidade1);
-            printf("Densidade do %s: %.2f \n", cidade2, densidade2);
+            printf("Densidade de %s: %.2f \n", cidade1, densidade1);
+            printf("Densidade de %s: %.2f \n", cidade2, densidade2);
                 
             if(densidade1>densidade2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -355,8 +355,8 @@ int main() {
 
             case 6:
             printf("atributo escolhido foi PIB per capita:\n");
-            printf("PIB Per Capita do %s: %.2f \n", cidade1, PIBCap1);
-            printf("PIB Per Capita do %s: %.2f \n", cidade2, PIBCap2);
+            printf("PIB Per Capita de %s: %.2f \n", cidade1, PIBCap1);
+            printf("PIB Per Capita de %s: %.2f \n", cidade2, PIBCap2);
                 
             if(PIBCap1>PIBCap2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
@@ -372,8 +372,8 @@ int main() {
 
             case 7:
             printf("atributo escolhido foi Super Poder:\n");
-            printf("Super Poder do %s: %.2f \n", cidade1, super1);
-            printf("Super Poder do %s: %.2f \n", cidade2, super2);
+            printf("Super Poder de %s: %.2f \n", cidade1, super1);
+            printf("Super Poder de %s: %.2f \n", cidade2, super2);
                 
             if(super1>super2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
