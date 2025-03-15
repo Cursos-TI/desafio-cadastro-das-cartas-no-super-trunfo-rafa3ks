@@ -211,10 +211,10 @@ int main() {
             printf("Densidade de %s: %.2f \n", cidade1, densidade1);
             printf("Densidade de %s: %.2f \n", cidade2, densidade2);
                 
-            if(densidade1>densidade2){
+            if(densidade1<densidade2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
                 printf("  \n");
-            }else if(densidade1<densidade2){
+            }else if(densidade1>densidade2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
                 printf("  \n");
             }else{
@@ -341,10 +341,10 @@ int main() {
             printf("Densidade de %s: %.2f \n", cidade1, densidade1);
             printf("Densidade de %s: %.2f \n", cidade2, densidade2);
                 
-            if(densidade1>densidade2){
+            if(densidade1<densidade2){
                 printf("Carta 1(%s) venceu!!! \n", cidade1);
                 printf("  \n");
-            }else if(densidade1<densidade2){
+            }else if(densidade1>densidade2){
                 printf("carta 2(%s) venceu!!! \n", cidade2);
                 printf("  \n");
             }else{
